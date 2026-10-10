@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CF-LMS — Belajar yang Ramah Otak</title>
+  <meta name="description" content="CF-LMS: Cognitive Friendly Learning Management System. Belajar tanpa overload, dengan alur yang jelas dan tenang.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="CF-LMS beranda"><span class="logo-dot"></span>CF-LMS</a>
+    <nav aria-label="Navigasi utama">
+      <a href="#fitur">Fitur</a>
+      <a href="#alur">Alur Belajar</a>
+      <a href="#dampak">Prinsip</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <button class="calm" id="calmToggle" aria-pressed="false" title="Kurangi animasi">
+      <span class="calm-track"><span class="calm-knob"></span></span>
+      <span>Calm mode</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="eyebrow reveal">Cognitive Friendly Learning Management System</p>
+        <h1 class="split" id="heroTitle">Belajar tanpa kewalahan.<br>Dirancang untuk cara otak bekerja.</h1>
+        <p class="lead reveal">Satu langkah per layar, umpan balik yang tenang, dan alur yang selalu jelas. CF-LMS mengurangi beban kognitif supaya fokusmu terpakai untuk memahami, bukan menavigasi.</p>
+        <div class="cta reveal">
+          <a class="btn primary magnetic" href="#alur">Lihat alur belajar</a>
+          <a class="btn ghost magnetic" href="https://github.com/nabil-vr/cf-lms">Repo GitHub</a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Satu fokus per layar</span><span>Chunking materi</span><span>Spaced repetition</span><span>Umpan balik lembut</span><span>Aksesibel</span><span>Bebas distraksi</span>
+        <span>Satu fokus per layar</span><span>Chunking materi</span><span>Spaced repetition</span><span>Umpan balik lembut</span><span>Aksesibel</span><span>Bebas distraksi</span>
+      </div>
+    </div>
+
+    <section class="section" id="fitur">
+      <h2 class="reveal">Fitur yang menjaga kepalamu tetap jernih</h2>
+      <div class="grid">
+        <article class="card spot reveal">
+          <div class="icon">◐</div>
+          <h3>Mode Fokus</h3>
+          <p>Hanya satu aktivitas tampil sekali waktu. Menu, notifikasi, dan elemen lain menyingkir saat kamu belajar.</p>
+        </article>
+        <article class="card spot reveal">
+          <div class="icon">▦</div>
+          <h3>Materi Terpecah</h3>
+          <p>Konten dipotong jadi bagian kecil bertahap, sehingga memori kerja tidak penuh sebelum konsep selesai dicerna.</p>
+        </article>
+        <article class="card spot reveal">
+          <div class="icon">↻</div>
+          <h3>Pengulangan Terjadwal</h3>
+          <p>Ulasan dijadwalkan tepat sebelum lupa, supaya pengetahuan menetap tanpa belajar maraton.</p>
+        </article>
+        <article class="card spot reveal">
+          <div class="icon">♡</div>
+          <h3>Umpan Balik Lembut</h3>
+          <p>Koreksi yang menjelaskan, bukan menghakimi. Nada dan warna dibuat menenangkan.</p>
+        </article>
+        <article class="card spot reveal">
+          <div class="icon">Aa</div>
+          <h3>Tampilan Adaptif</h3>
+          <p>Ukuran huruf, kontras, jarak baris, dan tingkat animasi bisa disesuaikan dengan kebutuhanmu.</p>
+        </article>
+        <article class="card spot reveal">
+          <div class="icon">◎</div>
+          <h3>Progres Terlihat</h3>
+          <p>Peta kemajuan yang sederhana: kamu selalu tahu sudah di mana dan langkah berikutnya apa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section path" id="alur">
+      <h2 class="reveal">Alur belajar yang selalu jelas</h2>
+      <div class="path-wrap" id="pathWrap">
+        <svg class="path-svg" viewBox="0 0 100 600" preserveAspectRatio="none" aria-hidden="true">
+          <path id="pathLine" d="M50 0 C 10 80, 90 140, 50 200 S 10 320, 50 400 S 90 520, 50 600" />
+        </svg>
+        <ol class="steps">
+          <li class="step reveal"><b>01</b><div><h3>Pilih tujuan</h3><p>Tentukan satu tujuan kecil untuk sesi ini.</p></div></li>
+          <li class="step reveal right"><b>02</b><div><h3>Pelajari satu potongan</h3><p>Materi singkat, satu konsep, tanpa gangguan.</p></div></li>
+          <li class="step reveal"><b>03</b><div><h3>Coba langsung</h3><p>Latihan ringan dengan umpan balik yang menjelaskan.</p></div></li>
+          <li class="step reveal right"><b>04</b><div><h3>Ulas di waktu tepat</h3><p>Sistem mengingatkan saat ingatan mulai memudar.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="dampak">
+      <h2 class="reveal">Prinsip desain</h2>
+      <div class="stats">
+        <div class="stat reveal"><span class="num" data-to="1">0</span><p>fokus utama per layar</p></div>
+        <div class="stat reveal"><span class="num" data-to="3">0</span><p>klik maksimum ke aktivitas apa pun</p></div>
+        <div class="stat reveal"><span class="num" data-to="4">0</span><p>pilihan paling banyak ditampilkan sekaligus</p></div>
+        <div class="stat reveal"><span class="num" data-to="0">0</span><p>animasi yang tak bisa dimatikan</p></div>
+      </div>
+      <p class="note reveal">Angka di atas adalah target desain proyek, bukan hasil pengukuran.</p>
+    </section>
+
+    <section class="section cta-end" id="kontak">
+      <h2 class="reveal">Ayo bangun belajar yang lebih tenang.</h2>
+      <p class="reveal">Lihat kode, beri masukan, atau ikut berkontribusi.</p>
+      <a class="btn primary magnetic reveal" href="https://github.com/nabil-vr/cf-lms">Buka di GitHub</a>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> CF-LMS · Dibuat dengan perhatian pada beban kognitif.</footer>
+  <script src="main.js"></script>
+</body>
+</html>
